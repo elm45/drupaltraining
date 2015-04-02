@@ -7,7 +7,7 @@
     attach: function (context, settings) {
 
 
-      console.log('loading Example A');
+      console.log('test');
 
 
 
