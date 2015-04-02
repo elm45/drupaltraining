@@ -1,5 +1,5 @@
 screenshot  = screenshot.png
-name        = Acquia training theme
+name        = Acquia Training
 description = Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 
 ; This theme is compatible with Drupal 7 core. And it is a sub-theme of Zen.
@@ -19,7 +19,6 @@ scripts[] = js/script.js
 
 
 ; regions
-
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted

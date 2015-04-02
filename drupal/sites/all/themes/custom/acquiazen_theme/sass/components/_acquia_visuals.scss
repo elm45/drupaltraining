@@ -1,0 +1,17 @@
+// This is just to set to visual aids based on regions /////
+
+body {
+  @include background-image(linear-gradient(#aaaaaa, #cccccc, white));
+}
+
+header {
+  background: #f9faf1;
+}
+
+div#main {
+  background: #ebf1e8;
+}
+
+footer {
+  background: #fcf7f4;
+}
