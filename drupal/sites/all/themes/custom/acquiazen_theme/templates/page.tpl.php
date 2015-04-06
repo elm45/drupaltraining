@@ -6,6 +6,7 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728148
  */
+//print $cheese;
 ?>
 
 <div id="page" class="<?php print isset($page_classes) ? $page_classes : ''; ?>">
