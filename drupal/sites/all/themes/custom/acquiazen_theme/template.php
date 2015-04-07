@@ -68,7 +68,8 @@ function acquiazen_theme_preprocess_page(&$variables, $hook, $page_classes) {
     //Using a preprocess function: create a new variable that will show an alternate logo.
     //Then print that new custom logo instead of the default one.
 
-  $variables['logo'] = t("https://maxichimaximind.files.wordpress.com/2014/12/batman-6-128.gif");
+  $variables['logo2'] = t("https://maxichimaximind.files.wordpress.com/2014/12/batman-6-128.gif");
+
 
     //Add a new body class that will show only when your on a news node page
 
@@ -96,27 +97,27 @@ function acquiazen_theme_preprocess_page(&$variables, $hook, $page_classes) {
 
     function acquiazen_theme_preprocess_region(&$variables, $hook) {
       //dpm($variables);
-    }
 
       //Add a unique class to each region that is showing on the homepage.
 
-if (!empty($variables['elements']['#region'])) {
-  if ($variables['elements']['#region'] == 'header') {
-    $variables['classes_array'][] = 'brie';
-  }
-  if ($variables['elements']['#region'] == 'highlighted') {
-    $variables['classes_array'][] = 'mozzarella';
-  }
-  if ($variables['elements']['#region'] == 'content') {
-    $variables['classes_array'][] = 'provolone';
-  }
-  if ($variables['elements']['#region'] == 'footer') {
-    $variables['classes_array'][] = 'goatster';
-  }
-  if ($variables['elements']['#region'] == 'page_bottom') {
-    $variables['classes_array'][] = 'chester';
-  }
-}
+      if (!empty($variables['elements']['#region'])) {
+        if ($variables['elements']['#region'] == 'header') {
+          $variables['classes_array'][] = 'brie';
+        }
+        if ($variables['elements']['#region'] == 'highlighted') {
+          $variables['classes_array'][] = 'mozzarella';
+        }
+        if ($variables['elements']['#region'] == 'content') {
+          $variables['classes_array'][] = 'provolone';
+        }
+        if ($variables['elements']['#region'] == 'footer') {
+          $variables['classes_array'][] = 'goatster';
+        }
+        if ($variables['elements']['#region'] == 'page_bottom') {
+          $variables['classes_array'][] = 'chester';
+        }
+      }
+    }
     /**
      * template_preprocess_block
      */
@@ -136,17 +137,29 @@ if (!empty($variables['elements']['#region'])) {
         $variables['classes_array'][] = 'cheese';
       }
     }
-    function aquiazen_theme_preprocess_views_view(&$variables, $hook) {
-      dpm($variables);
-      /*
-        * On the homepage news views pane:
-        * Add a class that will show on the views container (specific to just that view) http://screencast.com/t/LUrKwTzvyCg
-        * Add a class that will show on the pane container (specific to just that view) http://screencast.com/t/nIl9MskB
-       */
 
-      if (!empty($variables['views']['name'])) {
-        if ($variables['view']['name'] == 'news') {
+/*
+  * On the homepage news views pane:
+  * Add a class that will show on the views container (specific to just that view) http://screencast.com/t/LUrKwTzvyCg
+  * Add a class that will show on the pane container (specific to just that view) http://screencast.com/t/nIl9MskB
+ */
+    function acquiazen_theme_preprocess_views_view(&$variables, $hook) {
+      dpm($variables);
+
+
+      if (isset($variables['view'])) {
+        if ($variables['view']->name == 'news') {
           $variables['classes_array'][] = 'limberger';
+        }
+      }
+    }
+
+    function acquiazen_theme_preprocess_panels_pane(&$variables, $hook) {
+      dpm($variables);
+
+      if (isset($variables['pane'])) {
+        if ($variables['pane']->type == 'views') {
+          $variables['classes_array'][] = 'provolone';
         }
       }
     }
