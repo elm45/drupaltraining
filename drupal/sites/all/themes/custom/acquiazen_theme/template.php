@@ -56,7 +56,11 @@ function acquiazen_theme_preprocess_html(&$variables, $hook) {
 
 function acquiazen_theme_preprocess_page(&$variables, $hook, $page_classes) {
 
-  //dpm($variables);
+  dpm($variables);
+
+  //$variables['theme_hook_suggestions'][] = 'node__tortoise';
+  $variables['theme_hook_suggestions'][] = 'page__tortoise';
+
 
   if (isset($variables['node']->type)) {
     $variables['classes_array'][] = 'page-nodetype-' . drupal_html_class($variables['node']->type);
@@ -88,6 +92,9 @@ function acquiazen_theme_preprocess_page(&$variables, $hook, $page_classes) {
 
     function acquiazen_theme_preprocess_node(&$variables, $hook) {
       //dpm($variables);
+
+      $variables['theme_hook_suggestions'][] = 'node__tortoise';
+
     }
 
 
@@ -144,7 +151,7 @@ function acquiazen_theme_preprocess_page(&$variables, $hook, $page_classes) {
   * Add a class that will show on the pane container (specific to just that view) http://screencast.com/t/nIl9MskB
  */
     function acquiazen_theme_preprocess_views_view(&$variables, $hook) {
-      dpm($variables);
+      //dpm($variables);
 
 
       if (isset($variables['view'])) {
@@ -155,7 +162,7 @@ function acquiazen_theme_preprocess_page(&$variables, $hook, $page_classes) {
     }
 
     function acquiazen_theme_preprocess_panels_pane(&$variables, $hook) {
-      dpm($variables);
+      //dpm($variables);
 
       if (isset($variables['pane'])) {
         if ($variables['pane']->type == 'views') {
