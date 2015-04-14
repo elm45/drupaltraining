@@ -58,8 +58,7 @@ function acquiazen_theme_preprocess_page(&$variables, $hook, $page_classes) {
 
   dpm($variables);
 
-  //$variables['theme_hook_suggestions'][] = 'node__tortoise';
-  $variables['theme_hook_suggestions'][] = 'page__tortoise';
+  $variables['theme_hook_suggestions'][] = 'page__news';
 
 
   if (isset($variables['node']->type)) {

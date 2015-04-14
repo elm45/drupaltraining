@@ -5,3 +5,223 @@ div.pane-news {
   border: 1px solid greenyellow;
   padding: 20px;
 }
+
+
+//Responsive Web Design by Ethan Marcotte
+
+.page {
+  width: 90%;
+  margin: 36px auto;
+}
+
+body {
+  background-color: #DCDBD9;
+  color: #2c2c2c;
+  font: normal 100% cambria, georgia, serif;
+}
+
+a{
+  color:#d53232;
+  text-decoration: none;
+  &:hover {
+    color: #b52a2a;
+  }
+}
+
+h1 {
+  font-size: 1.5em; /* 24px/16px */
+  font-style: italic;
+  font-weight: normal;
+}
+
+.nav-primary li {
+  display: inline;
+  a{
+    color: #eecba5;
+    padding: 1em;
+    position: relative;
+    &:hover {
+      color: #f8f5f2
+    }
+  }
+}
+
+h1 a {
+  color: #747474;
+  font: bold 0.45833333em calibri, optima, arial, sans-serif; /* 11px/24px */
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.blog {
+  margin: 0 auto 53px;
+  width: 93.75%; /* 900px/960px */
+  background: #f8f5f2 url("blog-bg.png") repeat-y 63.111111111111111% 0; /* 568px/900px */
+}
+
+.blog .main {
+  float: left;
+  width: 62.888888%; /* 566px/900px */
+}
+.main-title{
+  background: #000;
+  color: #FFF;
+  font: normal 3.625em/0.9 "League Gothic", "Arial Narrow", "Arial", sans-serif; /* 58px/16px */
+  text-transform: uppercase;
+}
+
+.blog .other {
+  float:right;
+  width: 36.777777%; /* 331px/900px */
+}
+
+.lede {
+  padding: 0.8em 5.333333%; /* 48px/900px */
+}
+
+.recent-entries {
+  margin: 0 auto;
+  width: 69.7885196%; /* 231px/331px */
+}
+
+.article {
+  padding: 40px 8.48056537%; /* 48px/566px */
+}
+
+.date {
+  float: left;
+  background: none repeat scroll 0 0 rgba(0,0,0,0.6);
+  margin: -2.25em 0 0 -17.0886076%; /* 81px/474px */
+  width: 14.556962%; /* 69px/474px */
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.75em;
+  span {
+    display: block;
+    font-size: 3.75em;
+  }
+}
+
+.figure {
+  float: right;
+  margin-bottom: 0.5em;
+  margin-left: 2.53164557%; /* 12px/474px */
+  width: 48.7341772%; /* 231px/474px */
+}
+img, embed, object, video {
+  max-width: 100%;
+}
+
+img.full, object.full, .main img, .main object {
+  width: 100%;
+}
+
+.logo {
+  background: none;
+  background: url("images/logo-bg.jpg");
+  //  filter: progid:DXimageTransform.Microsoft.AlphaImageLoader (src="path/to/logo.png", sizingMethod="scale");
+  width: 17.22222222222%; /* 155px/900px */
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+  }
+}
+
+.feature img {
+display: block;
+max-width: auto;
+}
+
+.feature {
+  overflow: hidden;
+}
+
+.slides .figure b {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 0;
+  width: 112.27272727%; /* 741px/660px */
+  img {
+    display: block;
+    max-width: inherit;
+  }
+}
+
+.other h1 {
+  clear: both;
+  font-size: .6875em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px){
+  .page {
+    position: relative;
+    margin: 20px;
+    width: auto;
+  }
+  .welcome, .blog, .gallery {
+    margin: 0 0 30px;
+    width: auto;
+  }
+  .main-title{
+    font: normal 1.5em calibri, candara, segoe, "segoe ui", optima, arial, helvetica, sans-serif; /* 24px/16px */
+  }
+  .slides .figure b {
+    width: auto;
+    img {
+      max-width: 100%;
+    }
+    .logo {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .nav-primary {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 520px){
+  .nav-primary {
+    float: left;
+    width: 100%;
+    li {
+      clear: left;
+      float: left;
+      width: 48%;
+    }
+    a {
+      display: block;
+      padding: 0.45em;
+    }
+  }
+  li#nav-rated, li#nav-contact {
+    clear: right;
+    float: right;
+  }
+  .date {
+    float: right;
+  }
+  .recent-entries ol {
+    -moz-column-count: 2;
+  }
+}
+@media screen and (min-width: 1200px){
+.welcome, .blog, .gallery {
+  width: 49.375%;
+}
+.welcome, .gallery {
+  float: right;
+  margin: 0 0 40px;
+}
+  .blog {
+    float: left;
+    margin: 0 0 20px;
+  }
+}
