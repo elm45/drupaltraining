@@ -1,0 +1,112 @@
+/* Master Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align:baseline;
+    box-sizing: border-box;
+}
+body {
+    background-color: #0F4DA8;
+}
+/* mobile */
+/*@media screen and (max-width: 767px) {*/
+    header {
+        position: fixed; /* holds the header to the top of the screen */
+        background-color: #FF4100;
+        width: 100%;
+        z-index: 3;
+    }
+    .content {
+        background-color: #0F4DA8;
+        padding: 1.041667%; /* 8px/768px */
+        width: 100%;
+        position: relative; /* forces the picture below the header */
+        top: 96px;
+        overflow: auto;
+    }
+    .content img {
+        max-width: 100%;
+        width: 87.5%; /* 280px/320px */
+        padding: 1.041667%; /* 8px/768px */
+        border: black solid 1px;
+        display: block;
+        margin: auto;
+    }
+    .content b {
+        position: inherit; /* applies the CSS position from the parent class */
+        text-align: center;
+        margin: auto;
+    }
+    aside {
+        background-color: #FFDA00;
+        padding: 1.041667%; /* 8px/768px */
+        width: 100%;
+    }
+    aside img {
+        position: absolute; /* holds the image at a specific location on the page */
+        z-index: 2;
+        opacity: 0.4;
+        right: 0;
+        width: 78.125%; /* 250px/320px */
+        max-width: 100%;
+    }
+    footer {
+        background-color: #FF8773;
+        width: 100%;
+        clear: both;
+        height: 70px;
+        text-align: center;
+        padding-top: 5px;
+        position: relative; /* z-index needs a relative position to work */
+        z-index: 8;
+    }
+/*}*/
+/* non-mobile */
+@media screen and (min-width: 768px) {
+    .content {
+        width: 59.895833%; /* 460px/768px */
+        padding: 1.041667%; /* 8px/768px */
+        float: left;
+    }
+    .content img {
+        max-width: 100%;
+    }
+    aside {
+        width: 34.895833%; /* 268px/768px */
+        padding: 1.041667%; /* 8px/768px */
+        float: right;
+    }
+    aside img {
+        top: 30%;
+    }
+    footer {
+        clear: both;
+    }
+}
+/* tablet portrait */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait) {
+    footer {
+        background-color: #6A94D4; /* used this to identify what media queries are taking affect  */
+    }
+}
+
+/* tablet Landscape */
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape) {
+    footer {
+        background-color: #67E300;
+    }
+}
+
+/* common desktop */
+@media only screen
+and (min-width: 960px) {
+ footer {
+     background-color: #FFE340;
+ }
+}
