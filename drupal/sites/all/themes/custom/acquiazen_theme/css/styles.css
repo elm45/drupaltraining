@@ -1758,6 +1758,11 @@ a:hover {
 }
 
 /* line 31, ../sass/components/_news.scss */
+ol, ul {
+  list-style: none outside none;
+}
+
+/* line 34, ../sass/components/_news.scss */
 h1 {
   font-size: 1.5em;
   /* 24px/16px */
@@ -1765,22 +1770,22 @@ h1 {
   font-weight: normal;
 }
 
-/* line 37, ../sass/components/_news.scss */
+/* line 40, ../sass/components/_news.scss */
 .nav-primary li {
   display: inline;
 }
-/* line 39, ../sass/components/_news.scss */
+/* line 42, ../sass/components/_news.scss */
 .nav-primary li a {
   color: #eecba5;
   padding: 1em;
   position: relative;
 }
-/* line 43, ../sass/components/_news.scss */
+/* line 46, ../sass/components/_news.scss */
 .nav-primary li a:hover {
   color: #f8f5f2;
 }
 
-/* line 49, ../sass/components/_news.scss */
+/* line 52, ../sass/components/_news.scss */
 h1 a {
   color: #747474;
   font: bold 0.45833333em calibri, optima, arial, sans-serif;
@@ -1790,23 +1795,23 @@ h1 a {
   text-decoration: none;
 }
 
-/* line 57, ../sass/components/_news.scss */
+/* line 60, ../sass/components/_news.scss */
 .blog {
   margin: 0 auto 53px;
   width: 93.75%;
   /* 900px/960px */
-  background: #f8f5f2 url("blog-bg.png") repeat-y 63.11111% 0;
+  background: #f8f5f2 63.111111111111111% 0;
   /* 568px/900px */
 }
 
-/* line 63, ../sass/components/_news.scss */
+/* line 66, ../sass/components/_news.scss */
 .blog .main {
   float: left;
   width: 62.888888%;
   /* 566px/900px */
 }
 
-/* line 67, ../sass/components/_news.scss */
+/* line 70, ../sass/components/_news.scss */
 .main-title {
   background: #000;
   color: #FFF;
@@ -1815,33 +1820,33 @@ h1 a {
   text-transform: uppercase;
 }
 
-/* line 74, ../sass/components/_news.scss */
+/* line 77, ../sass/components/_news.scss */
 .blog .other {
   float: right;
   width: 36.777777%;
   /* 331px/900px */
 }
 
-/* line 79, ../sass/components/_news.scss */
+/* line 82, ../sass/components/_news.scss */
 .lede {
   padding: 0.8em 5.333333%;
   /* 48px/900px */
 }
 
-/* line 83, ../sass/components/_news.scss */
+/* line 86, ../sass/components/_news.scss */
 .recent-entries {
   margin: 0 auto;
   width: 69.7885196%;
   /* 231px/331px */
 }
 
-/* line 88, ../sass/components/_news.scss */
+/* line 91, ../sass/components/_news.scss */
 .article {
   padding: 40px 8.48056537%;
   /* 48px/566px */
 }
 
-/* line 92, ../sass/components/_news.scss */
+/* line 95, ../sass/components/_news.scss */
 .date {
   float: left;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.6);
@@ -1855,13 +1860,13 @@ h1 a {
   text-transform: uppercase;
   padding: 0.75em;
 }
-/* line 102, ../sass/components/_news.scss */
+/* line 105, ../sass/components/_news.scss */
 .date span {
   display: block;
-  font-size: 3.75em;
+  font-size: 3em;
 }
 
-/* line 108, ../sass/components/_news.scss */
+/* line 111, ../sass/components/_news.scss */
 .figure {
   float: right;
   margin-bottom: 0.5em;
@@ -1871,44 +1876,43 @@ h1 a {
   /* 231px/474px */
 }
 
-/* line 114, ../sass/components/_news.scss */
+/* line 117, ../sass/components/_news.scss */
 img, embed, object, video {
   max-width: 100%;
 }
 
-/* line 118, ../sass/components/_news.scss */
+/* line 121, ../sass/components/_news.scss */
 img.full, object.full, .main img, .main object {
   width: 100%;
 }
 
-/* line 122, ../sass/components/_news.scss */
+/* line 125, ../sass/components/_news.scss */
 .logo {
   background: none;
-  background: url("images/logo-bg.jpg");
   width: 17.22222222222%;
   /* 155px/900px */
 }
-/* line 127, ../sass/components/_news.scss */
+/* line 129, ../sass/components/_news.scss */
 .logo a {
   display: block;
 }
-/* line 130, ../sass/components/_news.scss */
+/* line 132, ../sass/components/_news.scss */
 .logo img {
   display: block;
 }
 
-/* line 135, ../sass/components/_news.scss */
+/* line 137, ../sass/components/_news.scss */
 .feature img {
   display: block;
   max-width: auto;
 }
 
-/* line 140, ../sass/components/_news.scss */
+/* line 142, ../sass/components/_news.scss */
 .feature {
   overflow: hidden;
 }
 
-/* line 144, ../sass/components/_news.scss */
+/* line 146, ../sass/components/_news.scss */
 .slides .figure b {
   display: block;
   overflow: hidden;
@@ -1916,13 +1920,18 @@ img.full, object.full, .main img, .main object {
   width: 112.27272727%;
   /* 741px/660px */
 }
-/* line 149, ../sass/components/_news.scss */
+/* line 151, ../sass/components/_news.scss */
 .slides .figure b img {
   display: block;
   max-width: inherit;
 }
 
-/* line 155, ../sass/components/_news.scss */
+/* line 156, ../sass/components/_news.scss */
+.meta li {
+  display: inline;
+}
+
+/* line 159, ../sass/components/_news.scss */
 .other h1 {
   clear: both;
   font-size: .6875em;
@@ -1930,92 +1939,156 @@ img.full, object.full, .main img, .main object {
   text-transform: uppercase;
 }
 
+/* line 165, ../sass/components/_news.scss */
+.gallery ol {
+  margin: 1em 14.7778% 2em 0;
+  width: 70.6667%;
+}
+
+/* line 170, ../sass/components/_news.scss */
+.gallery li {
+  float: left;
+  margin-right: 1.88679%;
+  width: 23.5849%;
+}
+
+/* line 175, ../sass/components/_news.scss */
+.gallery .last {
+  margin-right: 0;
+}
+
+/* line 178, ../sass/components/_news.scss */
+.gallery li a {
+  background: none repeat scroll 0 0 #eaeaea;
+  display: block;
+  padding: 5px 5px 10px;
+  text-align: center;
+}
+
+/* line 184, ../sass/components/_news.scss */
+.gallery h1 {
+  clear: both;
+}
+
 @media screen and (max-width: 768px) {
-  /* line 163, ../sass/components/_news.scss */
+  /* line 189, ../sass/components/_news.scss */
   .page {
     position: relative;
     margin: 20px;
     width: auto;
   }
 
-  /* line 168, ../sass/components/_news.scss */
+  /* line 194, ../sass/components/_news.scss */
   .welcome, .blog, .gallery {
     margin: 0 0 30px;
     width: auto;
   }
 
-  /* line 172, ../sass/components/_news.scss */
+  /* line 198, ../sass/components/_news.scss */
   .main-title {
     font: normal 1.5em calibri, candara, segoe, "segoe ui", optima, arial, helvetica, sans-serif;
     /* 24px/16px */
   }
 
-  /* line 175, ../sass/components/_news.scss */
+  /* line 201, ../sass/components/_news.scss */
   .slides .figure b {
     width: auto;
   }
-  /* line 177, ../sass/components/_news.scss */
+  /* line 203, ../sass/components/_news.scss */
   .slides .figure b img {
     max-width: 100%;
   }
-  /* line 180, ../sass/components/_news.scss */
+  /* line 206, ../sass/components/_news.scss */
   .slides .figure b .logo {
     float: none;
     margin: 0 auto 20px;
   }
-  /* line 184, ../sass/components/_news.scss */
+  /* line 210, ../sass/components/_news.scss */
   .slides .figure b .nav-primary {
     margin-bottom: 20px;
     text-align: center;
   }
+
+  /* line 215, ../sass/components/_news.scss */
+  .blog .main, .blog .other {
+    float: none;
+    width: auto;
+  }
+
+  /* line 219, ../sass/components/_news.scss */
+  .other .section {
+    width: auto;
+  }
 }
+/* line 223, ../sass/components/_news.scss */
+.gallery li a {
+  display: block;
+}
+
+/* line 226, ../sass/components/_news.scss */
+.gallery cite {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 520px) {
-  /* line 191, ../sass/components/_news.scss */
+  /* line 233, ../sass/components/_news.scss */
   .nav-primary {
     float: left;
     width: 100%;
   }
-  /* line 194, ../sass/components/_news.scss */
+  /* line 236, ../sass/components/_news.scss */
   .nav-primary li {
     clear: left;
     float: left;
     width: 48%;
   }
-  /* line 199, ../sass/components/_news.scss */
+  /* line 241, ../sass/components/_news.scss */
   .nav-primary a {
     display: block;
     padding: 0.45em;
   }
 
-  /* line 204, ../sass/components/_news.scss */
+  /* line 246, ../sass/components/_news.scss */
   li#nav-rated, li#nav-contact {
     clear: right;
     float: right;
   }
 
-  /* line 208, ../sass/components/_news.scss */
+  /* line 250, ../sass/components/_news.scss */
   .date {
     float: right;
   }
 
-  /* line 211, ../sass/components/_news.scss */
+  /* line 253, ../sass/components/_news.scss */
   .recent-entries ol {
     -moz-column-count: 2;
   }
+
+  /* line 256, ../sass/components/_news.scss */
+  .recent-entries ol {
+    -moz-column-count: 1;
+  }
+
+  /* line 259, ../sass/components/_news.scss */
+  .gallery {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
-  /* line 216, ../sass/components/_news.scss */
+  /* line 264, ../sass/components/_news.scss */
   .welcome, .blog, .gallery {
     width: 49.375%;
   }
 
-  /* line 219, ../sass/components/_news.scss */
+  /* line 267, ../sass/components/_news.scss */
   .welcome, .gallery {
     float: right;
     margin: 0 0 40px;
   }
 
-  /* line 223, ../sass/components/_news.scss */
+  /* line 271, ../sass/components/_news.scss */
   .blog {
     float: left;
     margin: 0 0 20px;

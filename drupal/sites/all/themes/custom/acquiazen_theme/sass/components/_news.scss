@@ -28,6 +28,9 @@ a{
   }
 }
 
+ol, ul {
+  list-style: none outside none;
+}
 h1 {
   font-size: 1.5em; /* 24px/16px */
   font-style: italic;
@@ -57,7 +60,7 @@ h1 a {
 .blog {
   margin: 0 auto 53px;
   width: 93.75%; /* 900px/960px */
-  background: #f8f5f2 url("blog-bg.png") repeat-y 63.111111111111111% 0; /* 568px/900px */
+  background: #f8f5f2 63.111111111111111% 0; /* 568px/900px */
 }
 
 .blog .main {
@@ -101,7 +104,7 @@ h1 a {
   padding: 0.75em;
   span {
     display: block;
-    font-size: 3.75em;
+    font-size: 3em;
   }
 }
 
@@ -121,7 +124,6 @@ img.full, object.full, .main img, .main object {
 
 .logo {
   background: none;
-  background: url("images/logo-bg.jpg");
   //  filter: progid:DXimageTransform.Microsoft.AlphaImageLoader (src="path/to/logo.png", sizingMethod="scale");
   width: 17.22222222222%; /* 155px/900px */
   a {
@@ -151,12 +153,36 @@ max-width: auto;
     max-width: inherit;
   }
 }
-
+.meta li {
+  display: inline;
+}
 .other h1 {
   clear: both;
   font-size: .6875em;
   text-align: center;
   text-transform: uppercase;
+}
+.gallery ol {
+//  float: right;
+  margin: 1em 14.7778% 2em 0;
+  width: 70.6667%;
+}
+.gallery li {
+  float: left;
+  margin-right: 1.88679%;
+  width: 23.5849%;
+}
+.gallery .last {
+  margin-right: 0;
+}
+.gallery li a {
+  background: none repeat scroll 0 0 #eaeaea;
+  display: block;
+  padding: 5px 5px 10px;
+  text-align: center;
+}
+.gallery h1 {
+  clear: both;
 }
 
 @media screen and (max-width: 768px){
@@ -186,7 +212,23 @@ max-width: auto;
       text-align: center;
     }
   }
+  .blog .main, .blog .other {
+    float: none;
+    width: auto;
+  }
+  .other .section {
+    width: auto;
+  }
 }
+.gallery li a {
+  display: block;
+}
+.gallery cite {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 520px){
   .nav-primary {
     float: left;
@@ -210,6 +252,12 @@ max-width: auto;
   }
   .recent-entries ol {
     -moz-column-count: 2;
+  }
+  .recent-entries ol {
+    -moz-column-count: 1;
+  }
+  .gallery {
+    display: none;
   }
 }
 @media screen and (min-width: 1200px){
