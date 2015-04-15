@@ -18,6 +18,7 @@ body {
   background-color: #DCDBD9;
   color: #2c2c2c;
   font: normal 100% cambria, georgia, serif;
+  box-sizing: border-box;
 }
 
 a{
@@ -184,7 +185,12 @@ max-width: auto;
 .gallery h1 {
   clear: both;
 }
-
+.gallery a {
+  height: 30px;
+}
+#footer{
+  clear: both;
+}
 @media screen and (max-width: 768px){
   .page {
     position: relative;
@@ -256,8 +262,10 @@ max-width: auto;
   .recent-entries ol {
     -moz-column-count: 1;
   }
-  .gallery {
-    display: none;
+  .gallery li {
+    float: left;
+    width: 100%;
+    margin: 1% 0 2% 2%;
   }
 }
 @media screen and (min-width: 1200px){
