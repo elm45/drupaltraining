@@ -1,10 +1,11 @@
 /* Master Reset*/
-* {
+* { /* #1 */
     margin: 0;
     padding: 0;
     vertical-align:baseline;
     box-sizing: border-box;
 }
+
 body {
     background-color: #0F4DA8;
 }
@@ -16,7 +17,10 @@ body {
         width: 100%;
         z-index: 3;
     }
-    .content {
+    #id {
+        color: aliceblue;
+    }
+    .content { /* #3 */
         background-color: #0F4DA8;
         padding: 1.041667%; /* 8px/768px */
         width: 100%;
@@ -37,18 +41,33 @@ body {
         text-align: center;
         margin: auto;
     }
-    aside {
+
+    aside { /* #5 */
         background-color: #FFDA00;
         padding: 1.041667%; /* 8px/768px */
         width: 100%;
     }
-    aside img {
+    a:visited { /* #6 */
+        color: #FF4100;
+    }
+    a:link {
+        color: #67E300;
+    }
+    aside img { /* #4 */
         position: absolute; /* holds the image at a specific location on the page */
         z-index: 2;
         opacity: 0.4;
         right: 0;
         width: 78.125%; /* 250px/320px */
         max-width: 100%;
+    }
+    table {
+        position: relative;
+        text-align: center;
+    }
+    thead {
+        font-style: italic;
+        color: #0F4DA8;
     }
     footer {
         background-color: #FF8773;
@@ -60,7 +79,56 @@ body {
         position: relative; /* z-index needs a relative position to work */
         z-index: 8;
     }
-/*}*/
+    h2 + p {
+        color: #67E300; /* #7 */
+    }
+    tbody ~ td { /* #9 */
+        color: aliceblue;
+    }
+    td {
+        padding: 3px;
+    }
+    td > a { /* #8 */
+        text-decoration: none;
+    }
+    a[href*="image"] { /* #12 */
+        color: #67E300;
+    }
+    a[href^="htt"] { /* #13 */
+        background-color: aliceblue;
+    }
+    a[data-filetype="image"] { /* #15 */
+        font-size: 1.2em;
+    }
+    a[href$=".jpg"]:hover { /* #14 & #19 */
+        background-color: lightgray;
+    }
+    img[data-info~="internal"] { /* #16 */
+        border: dashed;
+    }
+    img[alt] { /* #10 */
+        border: 2px solid black;
+    }
+    input[type=radio]:checked { /* #17 */
+        color: #FF4100;
+        padding: 2px;
+    }
+    form:before { /* #18 */
+        content: "cheeses";
+    }
+    a:not(.pixar) { /* #20 */
+        font-weight: bold;
+    }
+    p::first-letter { /* #21 */
+        font-weight: bold;
+        font-size: 2em;
+    }
+    tr:nth-child(2) { /* #22 */
+        background-color: #FF8773;
+    }
+    tr:nth-last-child(2) { /* #23 */
+        background-color: #FF8773;
+    }
 /* non-mobile */
 @media screen and (min-width: 768px) {
     .content {
