@@ -2135,7 +2135,7 @@ img.full, object.full, .main img, .main object {
 }
 
 /* line 21, ../sass/components/_javascripttraining.scss */
-div.peaches {
+div.peaches .organ {
   border: 1px dashed black;
   padding: 3px 20px;
 }
