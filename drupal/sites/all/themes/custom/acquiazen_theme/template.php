@@ -128,6 +128,7 @@ function acquiazen_theme_preprocess_region(&$variables, $hook) {
       $variables['classes_array'][] = 'chester';
     }
   }
+
 }
 
 /**
