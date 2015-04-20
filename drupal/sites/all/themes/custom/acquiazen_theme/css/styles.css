@@ -1699,7 +1699,7 @@ tr.selected td {
 /* line 803, ../sass/components/_misc.scss */
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1428000316');
+  background-image: url('../images/progress.gif?1427996296');
 }
 
 /* line 3, ../sass/components/_acquia_visuals.scss */
@@ -1725,6 +1725,11 @@ div#main {
 /* line 15, ../sass/components/_acquia_visuals.scss */
 footer {
   background: #fcf7f4;
+}
+
+/* line 20, ../sass/components/_acquia_visuals.scss */
+.background-blue {
+  background: #0000ff;
 }
 
 /* line 3, ../sass/components/_news.scss */
@@ -2107,6 +2112,34 @@ img.full, object.full, .main img, .main object {
     margin: 0 0 20px;
   }
 }
+/*
+
+@Carl: we are using this to visual test along with the JS stuff
+
+*/
+/* line 7, ../sass/components/_javascripttraining.scss */
+#boxes-box-javascript_playground {
+  background: #f7efd8;
+  padding: 15px;
+  border: 5px solid black;
+}
+
+/* line 13, ../sass/components/_javascripttraining.scss */
+.super-red {
+  background: indianred !important;
+}
+
+/* line 17, ../sass/components/_javascripttraining.scss */
+.border-yellow {
+  border: 2px solid yellow !important;
+}
+
+/* line 21, ../sass/components/_javascripttraining.scss */
+div.peaches {
+  border: 1px dashed black;
+  padding: 3px 20px;
+}
+
 /**
  * @file
  * Print styling
