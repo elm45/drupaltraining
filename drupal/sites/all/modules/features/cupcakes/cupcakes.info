@@ -1,0 +1,11 @@
+name = Cupcakes
+description = a test feature for mr Watson
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = cupcakes
+dependencies[] = boxes
+dependencies[] = ctools
+features[box][] = javascript_playground
+features[ctools][] = boxes:box:1
+features[features_api][] = api:2

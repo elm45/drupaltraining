@@ -6,19 +6,35 @@
   Drupal.behaviors.ExampleA = {
     attach: function (context, settings) {
 
+      console.log('Example A loaded');
 
-      console.log('test');
+    }
+  };
+
+  /**
+   * Hey Carl, we are using this for JS training ~
+   */
+  Drupal.behaviors.ExampleB = {
+    attach: function (context, settings) {
+      if (context === document) {
+
+        console.log('Example B is loaded');
 
 
-    $('.peaches').find('.nuts').addClass("border-yellow");
-    $('.apples').closest('.oranges').find('.nuts').addClass('border-solid');
-    $('.peaches').find('img').attr("alt","I love fries");
-    $('img').parent().prev('.nuts').find('a').css({"background-color":"blue", "font-family":"Arial"});
-    $('.nuts').find('p').html("I Love Avocados");
+        // using variable
+        var frenchfry = $('div.apples img');
+        // grab attr
+        var frenchfryAlt = frenchfry.attr('alt');
+        console.log(frenchfryAlt);
 
 
 
-    //$('.apples').parent('.oranges').add('.nuts').addClass('border-solid');
+
+
+
+        
+
+      }
     }
   };
 
