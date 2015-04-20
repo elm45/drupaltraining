@@ -27,12 +27,11 @@
         var frenchfryAlt = frenchfry.attr('alt');
         console.log(frenchfryAlt);
 
+        // https://api.jquery.com/category/traversing/
+        $('.oranges .peaches').find('span').addClass('MARKERS');
+        $('.apples').closest('.oranges').addClass('anotherClass');
 
 
-
-
-
-        
 
       }
     }

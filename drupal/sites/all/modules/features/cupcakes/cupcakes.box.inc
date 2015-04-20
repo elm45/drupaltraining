@@ -23,7 +23,7 @@ function cupcakes_default_box() {
 <div class="peaches">
 <div class="nuts">
 <p>
-Wafer pie donut pie jujubes. Jelly beans jujubes danish tootsie roll chupa chups sesame snaps croissant sugar plum bonbon. Muffin icing macaroon soufflé lemon drops chocolate cake sweet roll biscuit wafer. Cake cake carrot cake gingerbread bear claw chocolate jelly chocolate cake. Biscuit cheesecake danish bonbon wafer candy canes liquorice topping. Jelly-o soufflé sugar plum cotton candy gummi bears dragée ice cream. 
+Wafer pie FUDGE   pie jujubes. Jelly beans jujubes danish tootsie roll chupa chups sesame snaps croissant sugar plum bonbon. Muffin icing macaroon soufflé lemon drops chocolate cake sweet roll biscuit wafer. Cake cake carrot cake gingerbread bear claw chocolate jelly chocolate cake. Biscuit cheesecake danish bonbon wafer candy canes liquorice topping. Jelly-o soufflé sugar plum cotton candy gummi bears dragée ice cream.
 </p>
 <span>
 Wafer pie donut pie jujubes. Jelly beans jujubes danish tootsie roll chupa chups sesame snaps croissant sugar plum bonbon. Muffin icing macaroon soufflé lemon drops chocolate cake sweet roll biscuit wafer. Cake cake carrot cake gingerbread bear claw chocolate jelly chocolate cake. Biscuit cheesecake danish bonbon wafer candy canes liquorice topping. Jelly-o soufflé sugar plum cotton candy gummi bears dragée ice cream. Dessert marzipan tiramisu cookie dessert croissant jelly beans bonbon dragée. Dragée cotton candy liquorice croissant powder tootsie roll jelly beans tart marshmallow. Pastry caramels pie soufflé lemon drops. Biscuit sugar plum sweet roll pie cotton candy chocolate cake brownie brownie. Bonbon cheesecake bear claw croissant halvah icing caramels. Pastry tiramisu topping. Donut caramels sweet roll oat cake chupa chups liquorice.
@@ -36,6 +36,7 @@ Sweet macaroon pastry marshmallow sesame snaps tootsie roll. Jelly-o jelly beans
 </div>',
       'format' => 'php_code',
     ),
+    'additional_classes' => '',
   );
   $export['javascript_playground'] = $box;
 
