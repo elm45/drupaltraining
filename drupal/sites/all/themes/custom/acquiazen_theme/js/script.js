@@ -31,7 +31,7 @@
                 $('.oranges .peaches').find('span').addClass('MARKERS');
                 $('.apples').closest('.oranges').addClass('anotherClass');
 
-                //Carl's code
+                /*Carl's code
                 $('.peaches').find('.nuts').addClass("border-yellow");
                 $('.apples').closest('.oranges').find('.nuts').addClass('border-solid');
                 $('.peaches').find('img').attr("alt", "I love fries");
@@ -39,7 +39,7 @@
                     "background-color": "blue",
                     "font-family": "Arial"
                 });
-                $('.nuts').find('p').html("I Love Avocados");
+                $('.nuts').find('p').html("I Love Avocados");*/
 
             }
         }
