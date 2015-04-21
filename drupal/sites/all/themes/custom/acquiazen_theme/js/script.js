@@ -61,8 +61,20 @@
          $('.nuts').find('p').html("I Love Avocados");
        */
 
-        ///
+        //#1
+        $('.nuts').after('<div class="Burma"></div>');
+          var mangosGrow = $('.MARKERS').html();
+          //console.log(mangosGrow);
+          $('.Burma').html(mangosGrow);
 
+          //#2
+          $(".peaches").wrapInner( "<div class='cream'></div>");
+
+          //#3
+          $(".apples").wrap("<div class='cheese'></div>");
+
+          //#4
+          
 
       }
     }
