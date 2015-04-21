@@ -35,7 +35,6 @@ Sweet macaroon pastry marshmallow sesame snaps tootsie roll. Jelly-o jelly beans
 </div>
 </div>
 
-
 <div class="mangos">
 <div class="tangerine">
   Chupa chups <strong>Bold Chocolate</strong> cake lemon drops muffin sweet. <strong> Bold Jelly beans</strong> candy donut lollipop jelly beans lollipop. Candy candy gummies. <i>Chocolate chupa chups caramels brownie sesame snaps fruitcake pie brownie. Biscuit fruitcake jelly-o chocolate.
@@ -43,16 +42,15 @@ Sweet macaroon pastry marshmallow sesame snaps tootsie roll. Jelly-o jelly beans
 
   <div class="banana">
   <ul>
-  <li>test</li>
-    <li>test</li>
-      <li>test</li>
-        <li>test</li>
-          <li class="no_sir">test</li>
-           <li>test</li>
+  <li>testd</li>
+    <li>teadfst</li>
+      <li>tesasdft</li>
+        <li>tesdt</li>
+          <li class="no_sir">tetstdt</li>
+     <li>tetsdt</li>
   </ul>
   </div>
 </div>
-
 
 <form id="form_asparagus" action="#" target="#">
 
@@ -60,11 +58,6 @@ Sweet macaroon pastry marshmallow sesame snaps tootsie roll. Jelly-o jelly beans
 <input type="text" />
 <input type="submit" value="Submit">
 </form>
-
-
-
-
-
 
 ',
       'format' => 'php_code',
