@@ -22,3 +22,37 @@ div.peaches .organ {
   border: 1px dashed black;
   padding: 3px 20px;
 }
+
+div.question {
+  background: greenyellow;
+  width: 95%;
+  padding: 16px;
+  border: 1px crimson;
+}
+
+div.answer {
+  background: coral;
+  width: 95%;
+  padding: 16px;
+  border: 1px crimson;
+}
+
+div.IamProgress {
+  width: 100%;
+  height: 50px;
+  border: 1px solid brown;
+  float: left;
+  background: white;
+  > div {
+    width: 21%;
+    height: 50px;
+    float: left;
+    padding: 20px 2%;
+    text-align: center;
+  }
+}
+
+
+div.IamTooltip {
+  // todo: add code here
+}

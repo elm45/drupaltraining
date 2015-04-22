@@ -59,6 +59,41 @@ Sweet macaroon pastry marshmallow sesame snaps tootsie roll. Jelly-o jelly beans
 <input type="submit" value="Submit">
 </form>
 
+<hr /><br />
+
+<h2>Accordion </h2>
+<div class="IamAccordion">
+<div class="question">I am question #1</div>
+<div class="answer">I am answer #1 ...blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </div>
+<div class="question">I am question #2</div>
+<div class="answer">I am answer #2 ...blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </div>
+<div class="question">I am question #3</div>
+<div class="answer">I am answer #3 ...blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah </div>
+</div>
+
+
+<hr /><br />
+
+<h2>Progress Bar</h2>
+<div class="IamProgress">
+<div class="step_1">Step #1</div>
+<div class="step_2">Step #2</div>
+<div class="step_3">Step #3</div>
+<div class="step_4">Step #4</div>
+</div>
+<br /><br />
+
+
+<hr /><br />
+
+<h2>I am a tooltip</h2>
+<div class="IamTooltip">
+<div class="theTipItselt">There is more info here, blah blah blah</div>
+<div class="theTarget">Hover here please</div>
+</div>
+
+
+
 ',
       'format' => 'php_code',
     ),
