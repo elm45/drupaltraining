@@ -2140,6 +2140,39 @@ div.peaches .organ {
   padding: 3px 20px;
 }
 
+/* line 26, ../sass/components/_javascripttraining.scss */
+div.question {
+  background: greenyellow;
+  width: 95%;
+  padding: 16px;
+  border: 1px crimson;
+}
+
+/* line 33, ../sass/components/_javascripttraining.scss */
+div.answer {
+  background: coral;
+  width: 95%;
+  padding: 16px;
+  border: 1px crimson;
+}
+
+/* line 40, ../sass/components/_javascripttraining.scss */
+div.IamProgress {
+  width: 100%;
+  height: 50px;
+  border: 1px solid brown;
+  float: left;
+  background: white;
+}
+/* line 46, ../sass/components/_javascripttraining.scss */
+div.IamProgress > div {
+  width: 21%;
+  height: 50px;
+  float: left;
+  padding: 20px 2%;
+  text-align: center;
+}
+
 /**
  * @file
  * Print styling
