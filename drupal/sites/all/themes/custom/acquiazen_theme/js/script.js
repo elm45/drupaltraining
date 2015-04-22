@@ -58,57 +58,81 @@
                  "font-family": "Arial"
                  });
                  $('.nuts').find('p').html("I Love Avocados");
-                 */
+                 //#1
+                 $('.nuts').after('<div class="Burma"></div>');
+                 var mangosGrow = $('.mangos').html();
+                 //console.log(mangosGrow);
+                 $('.Burma').html(mangosGrow);
+                 //#2
+                 $(".peaches").wrapInner("<div class='pickle'></div>");
+                 //#3
+                 $(".apples").wrap("<div class='cheese'></div>");
+                 //#4
+                 $(".banana").find("li").each(function () {
+                 $(this).addClass("spirit");
+                 });
+                 //#5
+                 $(".banana").find('li').not(".no_sir").each(function () {
+                 $(this).addClass("EurAsia");
+                 });
+                 //#6
+                 $(".banana").find('li').filter(".no_sir").each(function () {
+                 $(this).addClass("Americas");
+                 });
+                 //#7
+                 $(".banana").find('li').each(function () {
+                 $(this).wrapInner("<div class='drink'></div>");
+                 });*/
 
-                // @Carl: this is great
                 //#1
-                $('.nuts').after('<div class="Burma"></div>');
-                var mangosGrow = $('.mangos').html();
-                //console.log(mangosGrow);
-                $('.Burma').html(mangosGrow);
-
-                // @Carl: this is great
-                //#2
-                $(".peaches").wrapInner("<div class='pickle'></div>");
-
-                // @Carl: this is great
-                //#3
-                $(".apples").wrap("<div class='cheese'></div>");
-
-              /**
-               * @Carl: You didn't need to create this, I had already added the markup.
-               * You just need to revert our cupcake feature for this to show
-               * http://screencast.com/t/VIIEqHN1D
-               *
-               */
-                //Adding the Banana list
-                //$('.banana').after("<ul><li>Rum</li><li>Vodka</li><li class='no'>Tequila</li><li>Whiskey</li></ul>");
-
-
-              /**
-               * @Carl: 4-7 are mostly right, but you DEFINITELY don't want to target every 'li' on the page.
-               * Make sure to update based on specific container, etc
-               * Also make sure to filter according to the feature code class of 'no_sir'
-               *
-               */
-                //#4
-                $(".banana").find("li").each(function () {
-                    $(this).addClass("spirit");
+                $(".nuts").find("a").click(function (event) {
+                    (event).preventDefault();
+                    console.log("He shoots... Glove Save")
                 });
 
+                //#2
+                $(".apples").find("img").hover(function () {
+                    console.log("hovered in");
+                });
+
+                //#3
+                $('.peaches').on("mouseenter", function () {
+                    $(this).addClass("andCream");
+                }).on("mouseleave", function () {
+                    $(this).removeClass("andCream");
+                });
+
+                //#4
+                 var count = 0;
+                 $("#form_asparagus").on("submit", function (event) {
+                 if (count <= 5) {
+                 alert("you just submitted the form " + (++count) + " times");
+                 }
+                 else {
+                 alert("you can't submit anymore");
+                 (event).preventDefault();
+                 }
+                 });
+
                 //#5
-                $(".banana").find('li').not(".no_sir").each(function () {
-                    $(this).addClass("EurAsia");
+                $("#form_asparagus").find("textarea").on("focus", function () {
+                    $(this).css("background-color", "Blue");
+                }).on("blur", function () {
+                    $(this).css("background-color", "");
                 });
 
                 //#6
-                $(".banana").find('li').filter(".no_sir").each(function () {
-                    $(this).addClass("Americas");
+                //This will always return 55
+                var innertext = $("#form_asparagus").find("textarea").text();
+                $("#form_asparagus").on("submit", function (event) {
+                    console.log(innertext.length);
+                    (event).preventDefault();
                 });
 
                 //#7
-                $(".banana").find('li').each(function () {
-                    $(this).wrapInner("<div class='drink'></div>");
+                //* Create a scroll event that prints the console.log that shows the distance you have scrolled
+                $(document).scroll(function () {
+                    console.log($(document).scrollTop());
                 });
 
             }
