@@ -63,13 +63,13 @@
                 // @Carl: this is great
                 //#1
                 $('.nuts').after('<div class="Burma"></div>');
-                var mangosGrow = $('.MARKERS').html();
+                var mangosGrow = $('.mangos').html();
                 //console.log(mangosGrow);
                 $('.Burma').html(mangosGrow);
 
                 // @Carl: this is great
                 //#2
-                $(".peaches").wrapInner("<div class='banana'></div>");
+                $(".peaches").wrapInner("<div class='pickle'></div>");
 
                 // @Carl: this is great
                 //#3
@@ -82,7 +82,7 @@
                *
                */
                 //Adding the Banana list
-                $('.banana').after("<ul><li>Rum</li><li>Vodka</li><li class='no'>Tequila</li><li>Whiskey</li></ul>");
+                //$('.banana').after("<ul><li>Rum</li><li>Vodka</li><li class='no'>Tequila</li><li>Whiskey</li></ul>");
 
 
               /**
@@ -92,22 +92,22 @@
                *
                */
                 //#4
-                $("li").each(function () {
+                $(".banana").find("li").each(function () {
                     $(this).addClass("spirit");
                 });
 
                 //#5
-                $('li').not(".no").each(function () {
+                $(".banana").find('li').not(".no_sir").each(function () {
                     $(this).addClass("EurAsia");
                 });
 
                 //#6
-                $('li').filter(".no").each(function () {
+                $(".banana").find('li').filter(".no_sir").each(function () {
                     $(this).addClass("Americas");
                 });
 
                 //#7
-                $('li').each(function () {
+                $(".banana").find('li').each(function () {
                     $(this).wrapInner("<div class='drink'></div>");
                 });
 
