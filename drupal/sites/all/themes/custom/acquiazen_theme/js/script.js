@@ -60,21 +60,37 @@
                  $('.nuts').find('p').html("I Love Avocados");
                  */
 
+                // @Carl: this is great
                 //#1
                 $('.nuts').after('<div class="Burma"></div>');
                 var mangosGrow = $('.MARKERS').html();
                 //console.log(mangosGrow);
                 $('.Burma').html(mangosGrow);
 
+                // @Carl: this is great
                 //#2
                 $(".peaches").wrapInner("<div class='banana'></div>");
 
+                // @Carl: this is great
                 //#3
                 $(".apples").wrap("<div class='cheese'></div>");
 
+              /**
+               * @Carl: You didn't need to create this, I had already added the markup.
+               * You just need to revert our cupcake feature for this to show
+               * http://screencast.com/t/VIIEqHN1D
+               *
+               */
                 //Adding the Banana list
                 $('.banana').after("<ul><li>Rum</li><li>Vodka</li><li class='no'>Tequila</li><li>Whiskey</li></ul>");
 
+
+              /**
+               * @Carl: 4-7 are mostly right, but you DEFINITELY don't want to target every 'li' on the page.
+               * Make sure to update based on specific container, etc
+               * Also make sure to filter according to the feature code class of 'no_sir'
+               *
+               */
                 //#4
                 $("li").each(function () {
                     $(this).addClass("spirit");
