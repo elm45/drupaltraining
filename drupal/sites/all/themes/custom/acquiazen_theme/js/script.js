@@ -133,12 +133,12 @@
           // if this is open
           if ($(this).hasClass('open')) {
             $(this).removeClass('open');
-            $('.answer').css("display","none");
+            $('.answer').slideUp();
           }
           // if this is not open
           else {
             $('.answer').each(function () {
-              $(this).hide();
+              $(this).slideUp();
             });
             $(this).addClass('open');
             var theQuestion = $(this).next('.answer');
@@ -165,13 +165,13 @@
         //#2
 //* On the .IamProgress, create an animated progress bar. When you click step 1, then it will fill that background-color (left to right), step 2,
 
+
         //#3
 //* Using the markup on .IamTooltip, create a tooltip on hover. You will need to use both SASS and JS to get this done. Don't forget to add a pretty arrow.
         $('.theTipItselt').hide();
         $( ".theTarget" ).hover(
             function() {
               //hover on
-              console.log("yup!");
               $('.theTipItselt').show().addClass("tool");
             }, function() {
               //hover off

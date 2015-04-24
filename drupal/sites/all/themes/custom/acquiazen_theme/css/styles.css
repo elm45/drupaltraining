@@ -1702,25 +1702,40 @@ tr.selected td {
   background-image: url('../images/progress.gif?1428000316');
 }
 
-/* line 842, ../sass/components/_misc.scss */
+/* line 841, ../sass/components/_misc.scss */
+.IamTooltip {
+  position: relative;
+}
+
+/* line 844, ../sass/components/_misc.scss */
+.theTarget {
+  position: relative;
+  display: inline;
+}
+
+/* line 849, ../sass/components/_misc.scss */
 .tool {
   background-color: #f00;
   width: 30%;
-  height: 25px;
-  float: right;
-  margin-right: 50%;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  bottom: 25px;
 }
 
-/* line 850, ../sass/components/_misc.scss */
-.tool:before {
+/* line 860, ../sass/components/_misc.scss */
+.tool:after {
   content: "";
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid #f00;
-  border-bottom: 13px solid transparent;
-  margin: 0 0 0 -25px;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f00;
+  border-left: 15px solid transparent;
+  margin: 25px 0 0 0;
+  left: 25px;
 }
 
 /* line 3, ../sass/components/_acquia_visuals.scss */
