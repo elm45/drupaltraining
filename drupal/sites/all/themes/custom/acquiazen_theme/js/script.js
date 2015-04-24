@@ -82,58 +82,116 @@
          //#7
          $(".banana").find('li').each(function () {
          $(this).wrapInner("<div class='drink'></div>");
+         });
+         //#1
+         $(".nuts").find("a").click(function (event) {
+         (event).preventDefault();
+         console.log("He shoots... Glove Save")
+         });
+         //#2
+         $(".apples").find("img").hover(function () {
+         console.log("hovered in");
+         });
+         //#3
+         $('.peaches').on("mouseenter", function () {
+         $(this).addClass("andCream");
+         }).on("mouseleave", function () {
+         $(this).removeClass("andCream");
+         });
+         //#4
+         var count = 0;
+         $("#form_asparagus").on("submit", function (event) {
+         if (count <= 5) {
+         alert("you just submitted the form " + (++count) + " times");
+         }
+         else {
+         alert("you can't submit anymore");
+         event.preventDefault();
+         }
+         });
+         //#5
+         $("#form_asparagus").find("textarea").on("focus", function () {
+         $(this).css("background-color", "Blue");
+         }).on("blur", function () {
+         $(this).css("background-color", "");
+         });
+         //#6
+         $("#form_asparagus textarea").keyup(function () {
+         var innertext = $(this).val().length;
+         console.log('length is '+ innertext);
+         event.preventDefault();
+         });
+         //#7
+         $(document).scroll(function () {
+         console.log($(document).scrollTop());
          });*/
 
         //#1
-        $(".nuts").find("a").click(function (event) {
-          (event).preventDefault();
-          console.log("He shoots... Glove Save")
+// *create an accordion just like https://jqueryui.com/accordion/ but with your own custom code.
+        $('.answer').hide();
+        $(".question").click(function (i) {;
+          // if this is open
+          if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $('.answer').css("display","none");
+          }
+          // if this is not open
+          else {
+            $('.answer').each(function () {
+              $(this).hide();
+            });
+            $(this).addClass('open');
+            var theQuestion = $(this).next('.answer');
+            theQuestion.slideDown('slow');
+          }
         });
+
+/*        $('.answer').hide();
+        $('.question').bind('click', function () {
+          //$(this).next('.answer').toggle().slideToggle();
+          $(this).next('.answer').addClass("green");
+
+        });*/
+
+        /*$('.answer').hide();
+         $('.question').click(function(){
+         $('.question').toggle(function () {
+         $('question').next('.answer').show('slow');
+         }, function() {
+         $('question').next('.answer').hide('slow');
+         });
+         });*/
 
         //#2
-        $(".apples").find("img").hover(function () {
-          console.log("hovered in");
-        });
+//* On the .IamProgress, create an animated progress bar. When you click step 1, then it will fill that background-color (left to right), step 2,
 
         //#3
-        $('.peaches').on("mouseenter", function () {
-          $(this).addClass("andCream");
-        }).on("mouseleave", function () {
-          $(this).removeClass("andCream");
-        });
-
-        //#4
-        var count = 0;
-        $("#form_asparagus").on("submit", function (event) {
-          if (count <= 5) {
-            alert("you just submitted the form " + (++count) + " times");
-          }
-          else {
-            alert("you can't submit anymore");
-            event.preventDefault();
-          }
-        });
-
-        //#5
-        $("#form_asparagus").find("textarea").on("focus", function () {
-          $(this).css("background-color", "Blue");
-        }).on("blur", function () {
-          $(this).css("background-color", "");
-        });
-
-        //#6
-        $("#form_asparagus textarea").keyup(function () {
-          var innertext = $(this).val().length;
-          console.log('length is '+ innertext);
-          event.preventDefault();
-        });
+//* Using the markup on .IamTooltip, create a tooltip on hover. You will need to use both SASS and JS to get this done. Don't forget to add a pretty arrow.
+        $('.theTipItselt').hide();
+        $( ".theTarget" ).hover(
+            function() {
+              //hover on
+              console.log("yup!");
+              $('.theTipItselt').show().addClass("tool");
+            }, function() {
+              //hover off
+              $('.theTipItselt').hide("slow");
+            }
+        );
 
 
-        //#7
-        //* Create a scroll event that prints the console.log that shows the distance you have scrolled
-        $(document).scroll(function () {
-          console.log($(document).scrollTop());
-        });
+        /*$('.theTipItselt').hide();
+        $('.theTarget').hover(function () {
+          console.log("yup!");
+          //$('.theTipItselt').show();
+        });*//*function () {
+          var hover = $(this).attr('theTarget');
+          $(this)
+              .data("theTipItselt", hover)
+              .removeAttr('theTarget');
+        }).mouseover(function (event) {
+
+        });*/
 
       }
     }
