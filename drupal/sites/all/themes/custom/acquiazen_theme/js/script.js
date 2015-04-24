@@ -164,19 +164,20 @@
 
         //#2
 //* On the .IamProgress, create an animated progress bar. When you click step 1, then it will fill that background-color (left to right), step 2,
-        $(".IamProgress").append("<p class='bar'></p>");
-          $('.bar').css({'height':'50px','margin-top':'0'});
+        $(".IamProgress").children().addClass('command').css({'position':'relative','z-index':'2'});
+        $(".IamProgress").append("<p class='bar'></p>").css({'position':'relative', 'z-index':'0'});
+          $('.bar').css({'position':'absolute','height':'50px','margin-top':'0','background-color':'yellow','width':'1%','z-index':'1'});
         $(".step_1").click(function(){
-          $('p').css({'background-color':'yellow','width':'25%'});
+          $('.bar').animate({'background-color':'yellow','width':'25%'});
         });
         $(".step_2").click(function(){
-          $('p').css({'background-color':'yellow','width':'50%'});
+          $('.bar').animate({'width':'50%'});
         });
         $(".step_3").click(function(){
-          $('p').css({'background-color':'yellow','width':'75%'});
+          $('.bar').animate({'background-color':'yellow','width':'75%'});
         });
         $(".step_4").click(function(){
-          $('p').css({'background-color':'yellow','width':'100%'});
+          $('.bar').animate({'background-color':'yellow','width':'100%'});
           console.log('click');
         });
 
