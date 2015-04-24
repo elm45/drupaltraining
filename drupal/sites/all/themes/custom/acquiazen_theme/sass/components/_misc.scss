@@ -838,22 +838,35 @@ tr.selected td {
     background-image: image-url("progress.gif");
   }
 }
+.IamTooltip{
+  position: relative;
+}
+.theTarget {
+  position: relative;
+  display: inline;
+}
 
 .tool {
   background-color: #f00;
   width: 30%;
-  height: 25px;
-  float: right;
-  margin-right: 50%;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  text-align: center;
+  border-radius: 5px;
+  bottom: 25px;
 }
 
-.tool:before {
+.tool:after {
   content:"";
   position: absolute;
   width: 0;
   height: 0;
-  border-top: 13px solid transparent;
-  border-right: 26px solid #f00;
-  border-bottom: 13px solid transparent;
-  margin: 0 0 0 -25px;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #f00;
+  border-left: 15px solid transparent;
+  margin: 25px 0 0 0;
+  left: 25px;
 }
+
+
