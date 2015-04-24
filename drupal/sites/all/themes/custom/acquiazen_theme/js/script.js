@@ -164,7 +164,21 @@
 
         //#2
 //* On the .IamProgress, create an animated progress bar. When you click step 1, then it will fill that background-color (left to right), step 2,
-
+        $(".IamProgress").append("<p class='bar'></p>");
+          $('.bar').css({'height':'50px','margin-top':'0'});
+        $(".step_1").click(function(){
+          $('p').css({'background-color':'yellow','width':'25%'});
+        });
+        $(".step_2").click(function(){
+          $('p').css({'background-color':'yellow','width':'50%'});
+        });
+        $(".step_3").click(function(){
+          $('p').css({'background-color':'yellow','width':'75%'});
+        });
+        $(".step_4").click(function(){
+          $('p').css({'background-color':'yellow','width':'100%'});
+          console.log('click');
+        });
 
         //#3
 //* Using the markup on .IamTooltip, create a tooltip on hover. You will need to use both SASS and JS to get this done. Don't forget to add a pretty arrow.
